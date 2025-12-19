@@ -1,0 +1,24 @@
+{
+  "name": "fw-loan",
+  "version": "1.0.0",
+  "description": "submittion for the LMA hackathon",
+  "keywords": [
+    "green",
+    "loan"
+  ],
+  "homepage": "https://github.com/thedazi/fw-loan#readme",
+  "bugs": {
+    "url": "https://github.com/thedazi/fw-loan/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedazi/fw-loan.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
