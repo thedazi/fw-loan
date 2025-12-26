@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "dev": "deno run --watch --allow-env --allow-net --env-file=.env main.ts"
+  },
+  "imports": {
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@^2.89.0"
+  },
+  "nodeModulesDir": "auto"
+}
