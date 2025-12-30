@@ -1,13 +1,15 @@
 {
   "imports": {
     "@oak/oak": "jsr:@oak/oak@^17.2.0",
-    "@tajpouria/cors": "jsr:@tajpouria/cors@^1.2.1"
+    "@tajpouria/cors": "jsr:@tajpouria/cors@^1.2.1",
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@^2.89.0"
   },
   "tasks": {
-    "dev": "deno run -A npm:vite & deno run server:start",
+    "dev:vite": "deno run -A npm:vite",
+    "dev:api": "deno run -A --env-file=../loan-be/.env --watch ./api/main.ts",
+    "dev": "deno task dev:vite & deno task dev:api",
     "build": "deno run -A npm:vite build",
-    "server:start": "deno run -A --watch ./api/main.ts",
-    "serve": "deno run build && deno run server:start"
+    "serve": "deno run -A npm:vite build && deno run -A ./api/main.ts"
   },
   "nodeModulesDir": "auto",
   "compilerOptions": {
